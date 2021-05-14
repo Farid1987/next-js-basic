@@ -1,17 +1,16 @@
+import React from "react";
 import Head from "next/head";
-import Link from "next/link";
-import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const About = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
+        <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas"></meta>
       </Head>
       <div>
-        <h1 className={styles.title}>Homepage</h1>
-        <p className={styles.text}>
+        <h1>About</h1>
+        <p>
           Minim ipsum in ipsum tempor proident eiusmod adipisicing eiusmod
           deserunt elit eu anim fugiat culpa. Laborum mollit magna aliquip
           dolore in occaecat incididunt mollit eu. Sunt consectetur sit deserunt
@@ -19,10 +18,9 @@ export default function Home() {
           in aliqua ea voluptate quis sint esse anim. Lorem cillum laborum do
           dolor deserunt ea culpa dolor adipisicing ad ex sint nisi.
         </p>
-        <Link href="/ninjas">
-          <a className={styles.btn}>See All Ninja</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default About;
